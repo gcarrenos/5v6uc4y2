@@ -100,7 +100,7 @@
                   contentType:"application/json; charset=utf-8",
                   dataType:"json",
                   success: function(data){
-
+                    $("table.table tbody").html("");
                     $.each( data, function( key, value ) {
                         var llavero = key+1
                         $.each( data[key], function( llave, value ) {
